@@ -237,7 +237,7 @@ function buildWelcomeMail({ name, email, password, isNewUser, flags }) {
     intro = `
       <p style="margin:0 0 14px;">${firstName}, dein SEN'SIN Generations Shift ist jetzt freigeschaltet.</p>
       <p style="margin:0 0 14px;">Dein persönlicher Raum wurde erweitert.</p>
-      <p style="margin:0 0 14px;">Logge dich auf SEN-SIN.com ein und starte unter „Mein Raum“ mit Tag 1.</p>
+      <p style="margin:0 0 14px;">Logge dich auf /sen-sin.com ein und starte unter „Mein Raum“ mit Tag 1.</p>
     `;
   } else {
     intro = `
