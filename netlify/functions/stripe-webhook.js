@@ -176,7 +176,7 @@ function buildWelcomeMail({ name, email, password, isNewUser, flags }) {
              <p style="margin:0 0 14px;">Deine Leitfäden sind ab sofort in deinem persönlichen Raum verfügbar – eine wachsende Bibliothek, die mit dir mitwächst.</p>`;
   } else if (!isNewUser && flags.hat_generations_shift) {
     intro = `<p style="margin:0 0 14px;">${firstName}, dein Generations Shift ist jetzt freigeschaltet.</p>
-             <p style="margin:0 0 14px;">Logge dich in deinen bekannten Mein Raum ein – dein Weg beginnt mit Tag 1.</p>`;
+             <p style="margin:0 0 14px;">Logge dich in auf unserer Homepage SEN-SIN.com ein und starte unter *Mein Raum* – dein Weg beginnt mit dem Tag 1.</p>`;
   } else {
     intro = `<p style="margin:0 0 14px;">${firstName}, deine SEN'SIN Leitfäden sind nun in deinem bestehenden Zugang verfügbar.</p>
              <p style="margin:0 0 14px;">Logge dich ein und du findest sie unter „Dein Zugang".</p>`;
@@ -198,7 +198,7 @@ function buildWelcomeMail({ name, email, password, isNewUser, flags }) {
   const closing = isNewUser && flags.hat_generations_shift
     ? `<p style="margin:14px 0;">Beim ersten Login wartet deine Bestandsanalyse auf dich. Nimm dir 15 Minuten Zeit – sie wird dein Anker. Am Ende deines Wegs machst du sie erneut, und du wirst sehen, was sich verändert hat.</p>
        <p style="margin:14px 0;">Tag für Tag wird ein neuer Inhalt freigeschaltet. Keine Eile. Keine Überforderung. Du bist nicht allein – ich begleite dich.</p>`
-    : '<p style="margin:14px 0;">Wenn du Fragen hast oder ein Thema fehlt, schreib mir – passende Inhalte ergänze ich laufend.</p>';
+    : '<p style="margin:14px 0;">Wenn du Fragen hast, sind wir jederzeit für dich erreichbar.</p>';
 
   return `<!DOCTYPE html>
 <html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Willkommen bei SEN'SIN</title></head>
@@ -217,7 +217,7 @@ function buildWelcomeMail({ name, email, password, isNewUser, flags }) {
   <div style="text-align:center;margin:32px 0 12px;">
     <a href="https://sen-sin.com" style="display:inline-block;background:#E8B04B;color:#0E2350;padding:14px 32px;text-decoration:none;border-radius:999px;font-weight:600;letter-spacing:.5px;font-family:'Manrope',Arial,sans-serif;font-size:14px;">Zum Mein Raum →</a>
   </div>
-  <p style="margin:28px 0 0;">Mit klarem Herzen,<br><strong>Mesut Sen</strong><br><em style="color:#888;font-size:13px;">SEN'SIN</em></p>
+  <p style="margin:28px 0 0;">Mit besten Grüßen,<br><strong>Mesut Sen</strong><br><em style="color:#888;font-size:13px;">SEN'SIN</em></p>
   <hr style="border:0;border-top:1px solid #eee;margin:36px 0 16px;">
   <p style="font-size:11px;color:#999;text-align:center;line-height:1.6;margin:0;">SEN'SIN · Mesut Sen · Kreuzstr. 52 · 46483 Wesel<br>sensin.team@outlook.de · <a href="https://sen-sin.com" style="color:#999;">sen-sin.com</a></p>
 </td></tr></table>
