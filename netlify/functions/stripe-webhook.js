@@ -142,7 +142,7 @@ exports.handler = async (event) => {
           : "Deine SEN'SIN Leitfäden sind freigeschaltet");
 
     await resend.emails.send({
-      from: "SEN'SIN <mesut@sen-sin.com>",
+      from: "SEN'SIN <Mesut_Sen@sen-sin.com>",
       to: customerEmail,
       subject,
       html: buildWelcomeMail({ name: customerName, email: customerEmail, password: plainPassword, isNewUser, flags })
